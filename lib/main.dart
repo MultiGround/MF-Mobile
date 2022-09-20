@@ -13,16 +13,13 @@ class WebViewExampleState extends State<WebViewExample> {
   @override
   void initState() {
     super.initState();
-    // Enable hybrid composition.
     if (Platform.isAndroid) WebView.platform = SurfaceAndroidWebView();
   }
 
   @override
   Widget build(BuildContext context) {
-    return WebView(
-      initialUrl: 'https://forum.giftshower.games',
-      javascriptMode: JavascriptMode.unrestricted,
-
-    );
+    return Scaffold(
+      name: "Testing!!!"
+    )
   }
 }
